@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BordersFragment"
+    android:background="@color/grey">
+
+    <LinearLayout
+        android:id="@+id/BordersFragment_LL_chosenState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:background="@color/white2"
+        >
+
+        <ImageView
+            android:id="@+id/BordersFragment_IMG_flag"
+            android:layout_width="125dp"
+            android:layout_height="100dp"
+            android:contentDescription="TODO"
+            android:layout_marginEnd="25dp"
+
+            />
+
+        <TextView
+            android:id="@+id/BordersFragment_LBL_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/BordersFragment_MapView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/BordersFragment_LL_chosenState"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/BordersFragment_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/BordersFragment_MapView"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/BordersFragment_FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"
+        app:backgroundTint="@color/purple_700"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="25dp"
+        />
+
+</RelativeLayout>
