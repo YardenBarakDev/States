@@ -19,6 +19,7 @@ import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.ybdev.states.CallBacks.ListCallBack;
 import com.ybdev.states.R;
@@ -52,8 +53,6 @@ public class BordersFragment extends Fragment {
 
         findViews();
         onClicks();
-
-
         return view;
     }
 
@@ -64,9 +63,14 @@ public class BordersFragment extends Fragment {
         BordersFragment_MapView.onCreate(savedInstanceState);
         BordersFragment_MapView.getMapAsync(map -> {
             googleMap = map;
+
+            //set custom map
+            googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(getContext(), R.raw.map_style));
+
             initRecyclerView();
         });
     }
+
 
     private void onClicks() {
         BordersFragment_FloatingActionButton.setOnClickListener(view -> {

@@ -4,7 +4,7 @@
     <item android:drawable="@color/white2"/>
 
     <item
-        android:drawable="@drawable/ic_icon"
+        android:drawable="@drawable/ic_globe"
         android:gravity="center"
 
         />
