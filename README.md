@@ -3,9 +3,9 @@ By clicking on one of the countries, the location of the country will be present
 a list of the neighboring countries.
 By clicking on one of the neighboring countries, the map will automatically move to its location and adjust the zoom level according to the size.
 
-I used retrofit to pull the data from https://restcountries.eu/
-GlideToVectorYou for the flags
-google map
+I used retrofit to pull the data from https://restcountries.eu/ .
+GlideToVectorYou for the flags.
+google map.
 
 <img src="Images/countrys list.jpg" width=400 wide =400>
 
